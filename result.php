@@ -32,7 +32,7 @@ session_start();
             -moz-appearance: textfield;
         }
     </style>
-    <title>Document</title>
+    <title>Result</title>
 </head>
 
 <body>

@@ -34,7 +34,7 @@ if (!isset($_SESSION["user"])) {
             -moz-appearance: textfield;
         }
     </style>
-    <title>Document</title>
+    <title>Admin</title>
 </head>
 
 <body>

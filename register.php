@@ -12,7 +12,7 @@
             min-height: 100vh;
         }
     </style>
-    <title>Login</title>
+    <title>Register</title>
 </head>
 
 <body>

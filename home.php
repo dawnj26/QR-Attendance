@@ -19,7 +19,7 @@ if (!isset($_SESSION["user"])) {
     <script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.3.4/vue.cjs.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/webrtc-adapter/8.2.2/adapter.min.js"></script>
-    <title>Document</title>
+    <title>Scanner</title>
 </head>
 
 <body>

@@ -17,7 +17,7 @@ session_start();
             min-height: 100vh;
         }
     </style>
-    <title>Login</title>
+    <title>Scanner</title>
 </head>
 
 <body>
