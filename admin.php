@@ -3,7 +3,7 @@ session_start();
 if (!isset($_SESSION["user"])) {
     header("Location: login.php");
 } elseif ($_SESSION["user"] !== "admin") {
-    header("Location: index.php");
+    header("Location: home.php");
 }
 ?>
 <!DOCTYPE html>

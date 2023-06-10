@@ -47,7 +47,7 @@ session_start();
             ?>
 
             <div class="d-grid">
-                <a href="index.php" class="btn btn-primary btn-lg">Scan again</a>
+                <a href="home.php" class="btn btn-primary btn-lg">Scan again</a>
             </div>
 
 
