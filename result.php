@@ -62,7 +62,7 @@ session_start();
         </a>
 
         <h3 class="text-center mb-3">Results</h3>
-        <table class="table">
+        <table class="table table-responsive table-striped">
             <thead>
                 <tr>
                     <th scope="col">Student ID</th>

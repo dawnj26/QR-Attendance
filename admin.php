@@ -49,8 +49,11 @@ if (!isset($_SESSION["user"])) {
                     aria-label="Search" required>
                 <button class="btn btn-outline-light" type="submit">Search</button>
             </form>
+            <div class="links">
+                <a href="generator.php" class="btn btn-secondary">QR Generator</a>
+                <a href="logout.php" class="btn btn-warning">Log out</a>
+            </div>
 
-            <a href="logout.php" class="btn btn-warning">Log out</a>
         </div>
 
     </nav>
@@ -58,7 +61,7 @@ if (!isset($_SESSION["user"])) {
 
         <h1 class='mb-3'>Welcome admin!</h1>
         <h3 class="text-center mb-3">Attendance List</h3>
-        <table class="table">
+        <table class="table table-responsive table-striped">
             <thead>
                 <tr>
                     <th scope="col">Attendance ID</th>

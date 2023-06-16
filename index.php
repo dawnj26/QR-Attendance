@@ -58,7 +58,7 @@
                     <a href="login.php" class="btn btn-primary">Try it now!</a>
                 </div>
                 <div class="col text-center">
-                    <img src="./img/qr_attendance.png" alt="">
+                    <img src="./img/qr_attendance.png" class="my-5" style="min-width: 20rem; max-width: 30rem;" alt="">
                 </div>
 
             </div>
