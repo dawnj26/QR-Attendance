@@ -40,6 +40,10 @@ if (!isset($_SESSION["user"])) {
             opacity: 1;
             pointer-events: auto;
         }
+
+        .generate {
+            width: 30rem;
+        }
     </style>
     <title>Admin</title>
 </head>
@@ -72,16 +76,16 @@ if (!isset($_SESSION["user"])) {
 
         </a>
 
-        <div class="row">
-            <div class="col">
+        <div class="container d-flex flex-column">
+            <div class="container d-flex flex-column align-items-center">
                 <h3 class="my-3">QR code generator</h3>
                 <div class="form">
-                    <input type="text" name="qr" id="input" class="form-control mb-3" style="width: 15rem;"
+                    <input type="text" name="qr" id="input" class="form-control mb-3 generate"
                         placeholder="Enter class code">
-                    <button class="btn btn-primary" id="btn" style="width: 15rem;">Generate</button>
+                    <button class="btn btn-primary generate" id="btn">Generate</button>
                 </div>
             </div>
-            <div class="col text-center w-100">
+            <div class="container text-center w-100">
                 <img style="width: 15rem;" id="qr" class="my-4" src="" alt="">
             </div>
         </div>
