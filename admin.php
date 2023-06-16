@@ -49,7 +49,7 @@ if (!isset($_SESSION["user"])) {
                     aria-label="Search" required>
                 <button class="btn btn-outline-light" type="submit">Search</button>
             </form>
-            <div class="links">
+            <div class="links mt-2">
                 <a href="generator.php" class="btn btn-secondary">QR Generator</a>
                 <a href="logout.php" class="btn btn-warning">Log out</a>
             </div>

@@ -42,7 +42,7 @@ if (!isset($_SESSION["user"])) {
         }
 
         .generate {
-            width: 30rem;
+            width: 100%;
         }
     </style>
     <title>Admin</title>
@@ -61,7 +61,7 @@ if (!isset($_SESSION["user"])) {
                 <button class="btn btn-outline-light" type="submit">Search</button>
             </form>
 
-            <a href="logout.php" class="btn btn-warning">Log out</a>
+            <a href="logout.php" class="btn btn-warning mt-2">Log out</a>
         </div>
 
     </nav>
