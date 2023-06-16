@@ -59,7 +59,7 @@ if (!isset($_SESSION["user"])) {
     </nav>
     <div class="container my-3">
 
-        <h1 class='mb-3'>Welcome admin!</h1>
+        <h1 class='mb-5 mt-4'>Welcome admin!</h1>
         <h3 class="text-center mb-3">Attendance List</h3>
         <table class="table table-responsive table-striped">
             <thead>

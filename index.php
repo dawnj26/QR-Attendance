@@ -27,7 +27,7 @@
 
 <body>
 
-    <div class="container-fluid p-0">
+    <div class="container-fluid p-0 h-100">
 
         <nav class="navbar navbar-expand-sm navbar-dark bg-primary px-3">
 
@@ -42,29 +42,30 @@
             </div>
 
         </nav>
+    </div>
 
 
-        <div class="container py-3 hero d-flex align-items-center">
-            <div class="row">
-                <div class="col">
-                    <h1 class="mb-4">
-                        Efficient Attendance Tracking in Schools: An automated QR Code System
-                    </h1>
-                    <p class="mb-4">
-                        Upgrade your school's attendance tracking system with an automated QR code login system. Say
-                        goodbye
-                        to time-consuming manual processes and hello to efficiency and accuracy.
-                    </p>
-                    <a href="login.php" class="btn btn-primary">Try it now!</a>
-                </div>
-                <div class="col text-center">
-                    <img src="./img/qr_attendance.png" class="my-5" style="min-width: 20rem; max-width: 30rem;" alt="">
-                </div>
-
+    <div class="container hero d-flex align-items-center">
+        <div class="row my-4">
+            <div class="col">
+                <h1 class="mb-4">
+                    Efficient Attendance Tracking in Schools: An automated QR Code System
+                </h1>
+                <p class="mb-4">
+                    Upgrade your school's attendance tracking system with an automated QR code login system. Say
+                    goodbye
+                    to time-consuming manual processes and hello to efficiency and accuracy.
+                </p>
+                <a href="login.php" class="btn btn-primary">Try it now!</a>
+            </div>
+            <div class="col text-center">
+                <img src="./img/qr_attendance.png" class="my-5" style="min-width: 20rem; max-width: 30rem;" alt="">
             </div>
 
         </div>
+
     </div>
+
 
 
 
