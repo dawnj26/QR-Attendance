@@ -44,12 +44,8 @@ if (!isset($_SESSION["user"])) {
         <div class="container-fluid d-flex justify-content-space-between">
             <a class="navbar-brand" href="#">QR Attendance</a>
             <!-- Links -->
-            <form class="d-flex" role="search" action="result.php" method="get">
-                <input class="form-control me-2" name="search" id="search" type="number" placeholder="Student ID"
-                    aria-label="Search" required>
-                <button class="btn btn-outline-light" type="submit">Search</button>
-            </form>
-            <div class="links mt-2">
+
+            <div class="links">
                 <a href="generator.php" class="btn btn-secondary">QR Generator</a>
                 <a href="logout.php" class="btn btn-warning">Log out</a>
             </div>
@@ -59,8 +55,18 @@ if (!isset($_SESSION["user"])) {
     </nav>
     <div class="container my-3">
 
-        <h1 class='mb-5 mt-4'>Welcome admin!</h1>
+        <h1 class='mb-3 mt-4'>Welcome admin!</h1>
+
+
         <h3 class="text-center mb-3">Attendance List</h3>
+        <div class="container d-flex justify-content-center mb-3">
+            <form class="d-flex" role="search" action="result.php" style="max-width: 20rem;" method="get">
+                <input class="form-control me-2" name="search" id="search" type="number" placeholder="Student ID"
+                    aria-label="Search" required>
+                <button class="btn btn-primary" type="submit">Search</button>
+            </form>
+        </div>
+
         <table class="table table-responsive table-striped">
             <thead>
                 <tr>

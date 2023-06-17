@@ -42,11 +42,7 @@ session_start();
         <div class="container-fluid d-flex justify-content-space-between">
             <a class="navbar-brand" href="#">QR Attendance</a>
             <!-- Links -->
-            <form class="d-flex" role="search" action="result.php" method="get">
-                <input class="form-control me-2" name="search" id="search" type="number" placeholder="Student ID"
-                    aria-label="Search" required>
-                <button class="btn btn-outline-light" type="submit">Search</button>
-            </form>
+
             <a href="logout.php" class="btn btn-warning">Log out</a>
         </div>
 
@@ -62,6 +58,13 @@ session_start();
         </a>
 
         <h3 class="text-center mb-3">Results</h3>
+        <div class="container d-flex justify-content-center mb-3">
+            <form class="d-flex" role="search" action="result.php" style="max-width: 20rem;" method="get">
+                <input class="form-control me-2" name="search" id="search" type="number" placeholder="Student ID"
+                    aria-label="Search" required>
+                <button class="btn btn-primary" type="submit">Search</button>
+            </form>
+        </div>
         <table class="table table-responsive table-striped">
             <thead>
                 <tr>
