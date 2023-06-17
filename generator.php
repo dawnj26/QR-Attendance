@@ -31,7 +31,7 @@ if (!isset($_SESSION["user"])) {
             -moz-appearance: textfield;
         }
 
-        img {
+        .qr {
             opacity: 0;
             pointer-events: none;
         }
@@ -86,7 +86,8 @@ if (!isset($_SESSION["user"])) {
                 </div>
             </div>
             <div class="container text-center w-100">
-                <img style="width: 15rem;" id="qr" class="my-4" src="" alt="">
+                <img style="width: 10rem;" id="qr" class="my-4 d-block qr m-auto" src="" alt="">
+                <button class="btn btn-primary qr" id="download">Save QR code</button>
             </div>
         </div>
     </div>
@@ -94,17 +95,41 @@ if (!isset($_SESSION["user"])) {
     <script>
         const qr = document.getElementById("qr"),
             input = document.getElementById("input"),
-            btn = document.getElementById("btn");
+            btn = document.getElementById("btn"),
+            download = document.getElementById('download'),
+            body = document.body;
 
         let preVal;
+        let link;
 
         btn.addEventListener("click", () => {
             let qrVal = input.value;
             if (!qrVal) return;
-            qr.src = 'https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=' + qrVal;
+            link = 'https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=' + qrVal;
+            qr.src = link;
+            download.classList.add('active');
             qr.classList.add("active");
-            console.log(qrVal);
+
         })
+
+
+        download.addEventListener('click', e => {
+            e.preventDefault();
+
+            fetchFile(link);
+        })
+
+        function fetchFile(url) {
+            fetch(url).then(res => res.blob()).then(file => {
+                let tempUrl = URL.createObjectURL(file);
+                let aTag = document.createElement('a');
+                aTag.href = tempUrl;
+                aTag.download = 'qr';
+                body.appendChild(aTag);
+                aTag.click();
+                aTag.remove();
+            })
+        }
 
     </script>
 
